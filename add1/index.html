@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Анонимайзер</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/static/style.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+      			<h1></h1>
+    		</div>
+    		<div id="content">
+    			<h2 class="first">
+    				<a href="http://lab.posevin.com:10073">Анонимайзер</a>
+    			</h2>
+    			<p class="main">
+        			<b>Анонимайзер</b> — средство для скрытия информации о компьютере или пользователе в сети от удалённого сервера
+      			</p>
+      			<p class="main">
+        			Другими словами, анонимайзер обеспечивает конфиденциальность информации о пользователе и позволяет посещать сайты, заблокированные в вашем регионе
+      			</p>
+      			<p class="main">
+        			Рекомендую использовать дополнительные средства для защиты трафика от перехвата
+      			</p>
+      			<h2>Введите адрес сайта для анонимного просмотра</h2>
+      			<form action="r" method="post" class="form" id="proxy" target="_blank">
+      				<div>
+          				<input type="text" name="url" id="url" class="textbox" autofocus>
+          				<input type="submit" value="Go" class="button" onclick="document.getElementById('proxy').action='http://lab.posevin.com:10073/'+ document.getElementById('url').value">
+        			</div>
+      			</form>
+      			<div id="footer">
+      				&copy; 2018 Разработано студентом МГТУ им. Баумана факультета ИУ9 Молчановым В. А.
+      				По всем вопросам обращаться на vsevolodmolchanov@gmail.com
+    			</div>
+    		</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <style>
+            table {
+                width: 100%;
+            }
+            th, td {
+                padding: 15px;
+                text-align: left;
+                text-align: center;
+                border: 1px solid #ddd;
+            }
+            tr.c {
+                color: blue;
+            }
+            #ch1, #per1 {
+                color: {{.Col1}};
+            }
+            #ch2, #per2 {
+                color: {{.Col2}};
+            }
+            #ch3, #per3 {
+                color: {{.Col3}};
+            }
+            #ch4, #per4 {
+                color: {{.Col4}};
+            }
+            #ch5, #per5 {
+                color: {{.Col5}};
+            }
+        </style>
+	</head>
+	<body>
+		<table id ="shares">
+			<thead>
+				<!-- Tickers -->
+				<tr>
+    				<th>
+    					{{.T1}}	
+    				</th>
+    				<th>
+ 	   					{{.T2}}
+    				</th>
+    				<th>
+    					{{.T3}}
+    				</th>
+    				<th>
+    					{{.T4}}
+    				</th>
+    				<th>
+    					{{.T5}}
+    				</th>
+  				</tr>					
+			</thead>
+			<tbody>
+				<!-- Information about tickers -->
+				<tr class="c">
+    				<td>
+    					{{.C1}}	
+    				</td>
+    				<td>
+    					{{.C2}}
+    				</td>
+    				<td>
+    					{{.C3}}
+    				</td>
+    				<td>
+    					{{.C4}}
+    				</td>
+    				<td>
+    					{{.C5}}
+    				</td>
+  				</tr>
+				<tr>
+    				<td>
+    					{{.P1}}	
+    				</td>
+    				<td>
+    					{{.P2}}
+    				</td>
+    				<td>
+    					{{.P3}}
+    				</td>
+    				<td>
+    					{{.P4}}
+    				</td>
+    				<td>
+    					{{.P5}}
+    				</td>
+  				</tr>
+				<tr>
+    				<td id="ch1">
+    					{{.Ch1}}	
+    				</td>
+    				<td id="ch2">
+    					{{.Ch2}}
+    				</td>
+    				<td id="ch3">
+    					{{.Ch3}}
+    				</td>
+    				<td id="ch4">
+    					{{.Ch4}}
+    				</td>
+    				<td id="ch5">
+    					{{.Ch5}}
+    				</td>
+  				</tr>
+				<tr>
+    				<td id="per1">
+    					{{.Per1}}	
+    				</td>
+    				<td id="per2">
+    					{{.Per2}}
+    				</td>
+    				<td id="per3">
+    					{{.Per3}}
+    				</td>
+    				<td id="per4">
+    					{{.Per4}}
+    				</td>
+    				<td id="per5">
+    					{{.Per5}}
+    				</td>
+  				</tr>		
+			</tbody>
+		</table>			
+	</body>
+</html>
